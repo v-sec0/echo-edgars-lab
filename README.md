@@ -1,2 +1,4 @@
 # edgars-echo-lab
-Edgar's Discount Site Emporium
+_Edgar's Discount Site Emporium_
+
+Don't come in...
