@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'MagicCards' ;
+  src: url('/echo-edgars-lab/fonts/MagicCardsNormal.ttf') format('truetype');
+}
+
+
+/* Beginning of stupidly hard to make navbar */
+
+nav {
+  background-color: rgba(3, 3, 3, .8);
+  overflow: visible;
+  padding: 10px;
+}
+
+.nav-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-container li {
+  display: inline;
+  padding: 10px;
+  text-align: left;
+}
+.nav-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-container a:hover:not(.nav-title) {
+  color: grey
+}
+
+.nav-title {
+  float:right;
+}
+
+.nav-title:hover {
+  color:white;
+}
+/* End of stupidly difficult to make navbar */
+
+body {
+  background-image: url("https://staticdelivery.nexusmods.com/images/100/833858-1487820013.jpg");
+}
+.main-blur {
+  flex-shrink: 0;
+  margin:100px;
+  padding: 50px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+  border-radius: 70px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.main-blur:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(0, 0, 0, .86);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+.profile {
+  width: 350px;
+  height: 350px;
+  border: solid 1px grey;
+}
+
+.profile-welcome {
+  font-style: italic;
+}
+
+.brand-title {
+  color: darkred;
+  text-shadow: .2px .2px tan;
+}
+
+.site-selection {
+  width: 40%;
+}
+
+.site-container {
+  flex-shrink: 0;
+  padding: 30px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 8);	
+  border-radius: 70px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.site-container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(0, 0, 0, .86);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+
+.site-item{
+  width: 200px;
+  height: 200px;
+}
+
+.site-flex {
+  display: flexbox;
+  align-items: center;  
+}
+
+.site-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-link {
+  text-decoration: none;
+  margin: 3px;
+  border: outset goldenrod 1px;
+  color: goldenrod;
+}
+
+.site-link:hover {
+  color: white;
+  background: goldenrod;
+}
+
+#psuedo-body {
+  text-align: center;
+  color: white;
+  background: inherit;
+  overflow: hidden;
+  display:flex;
+  align-items: center;
+  font-family: 'MagicCards';
+}
+
